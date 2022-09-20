@@ -31,7 +31,6 @@ $( function() {
         });
     });
 
-
     $("#imgUpload").on("change", function(event) {
         var file = event.target.files[0];
         var reader = new FileReader(); 
