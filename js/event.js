@@ -1,5 +1,15 @@
 $( function() {
 
+    // design click open modal
+    $(document).ready(function() {
+        $('#BgImg').on('click', function() {
+            $('.bg_img').toggleClass('on');
+        });
+        $('.btn_close').on('click', function() {
+            $('.bg_img').removeClass('on');
+        });
+    });
+
     // background upload image
     $('input:radio[name="bg_img"]').on('change', function(){
         var bgVal = $('input:radio[name="bg_img"]:checked').val();
@@ -10,6 +20,17 @@ $( function() {
             $('.design_inner').css({'background-color': '', 'background-image': 'url('+ bgVal +')'});
         }
     });
+
+    // design click open modal
+    $(document).ready(function() {
+        $('#BgUpload').on('click', function() {
+            $('.bg_img_upload').toggleClass('on');
+        });
+        $('.btn_close').on('click', function() {
+            $('.bg_img_upload').removeClass('on');
+        });
+    });
+
 
     $("#imgUpload").on("change", function(event) {
         var file = event.target.files[0];
@@ -41,20 +62,12 @@ $( function() {
 
 // design click open modal
 $(document).ready(function() {
-    $('.click').on('click', function() {
-        $('.bg_img').toggleClass('on');
-    });
-});
-
-$(document).ready(function() {
-    $('.click').on('click', function() {
+    $('#StickerIco').on('click', function() {
         $('.sticker_icons').toggleClass('on');
     });
-});
-
-$(".btn_close").click(function() {
-    $("body").removeClass("fixed");
-    $(".wrapper").removeClass("on");
+    $('.btn_close').on('click', function() {
+        $('.sticker_icons').removeClass('on');
+    });
 });
 
 
@@ -99,6 +112,17 @@ function stickerMake(src) {
     stickerSelect();
 
 } // stickerMake()
+
+
+// design click open modal
+$(document).ready(function() {
+    $('#StickerTxt').on('click', function() {
+        $('.sticker_txt').toggleClass('on');
+    });
+    $('.btn_close').on('click', function() {
+        $('.sticker_txt').removeClass('on');
+    });
+});
 
 
 function texSel(itemId) {
