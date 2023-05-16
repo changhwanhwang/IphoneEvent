@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>Amore Mall Gate</title>
+    <link rel="stylesheet" href="../asseets/css/reset.css">
+    <style>
+        html,body{ 
+            height: 100%;
+            margin: 0;
+        }
+        .wrap{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            overflow: hidden;
+            margin: 0 auto;
+            max-width: 768px;
+        }
+        .header{
+            flex: 0 0 60px;
+            padding: 60px 0 0 30px;
+        }
+        .footer{
+            flex: 0 0 40px;
+            padding:0 30px;
+            margin-top: 50px;
+        }
+        .wrap{
+            height: 100%;
+            overflow-y: auto;
+        }
+        .containel{
+            padding: 0 30px;
+        }
+        /* .type_box ul li a{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding: 18px 0 19px;
+            border-radius: 8px;
+            color: #fff;
+            font-weight: bold;
+            margin-top: 15px;
+            background: #242D3C;
+        }
+        .type_box ul li a.b{
+            background: #D71921;
+        }
+        .top_menu{
+            display: flex;
+            justify-content: space-between;
+            padding: 60px 20px 0;
+        } */
+        .type_container{
+            margin-top: 105px;
+        }
+        .flex{
+            display: flex;
+            flex-flow: column;
+        }
+        .title{
+            margin-bottom: 59px;
+        }
+        .type_box{
+            text-align: center;
+            margin-top: 10px;
+            width: 100%;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 16px rgba(36, 45, 60, 0.08);
+            border-radius: 16px;
+        }
+        .flex a:nth-of-type(1) div{
+            padding: 21px 79px 38px;
+        }
+        .flex a:nth-of-type(2) div{
+            padding: 21px 73px 38px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <header>
+                <div class="top_menu">
+                    <div class="logo">
+                        <img src="./assets/img/ico_top_logo.svg">
+                    </div>
+                </div>
+            </header>  
+        </div>
+        <div class="containel">
+            <section>
+                <div class="type_container">
+                    <div class="flex">
+                        <div class="title">
+                            <img src="./assets/img/title.svg">
+                        </div>
+                        <a href="./type_a/sub1_sms_send.html">
+                            <div class="type_box">
+                                <img src="./assets/img/type_a.svg">
+                            </div>
+                        </a>
+                        <a href="./type_b/index_default.html">
+                            <div class="type_box">
+                                <img src="./assets/img/type_b.svg">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <!-- <div class="type_box">
+                    <ul>
+                        <li>
+                            <span style="font-weight: bold;">BNK 캐피탈 Type A</span>
+                            <a class="a" href="https://the51uid.github.io/BNK_Capital/type_a/index.html">
+                                Main
+                            </a>
+                        </li>
+                        <li>
+                            <span style="font-weight: bold; margin-top:20px; display:inline-block;">BNK 캐피탈 Type B</span>
+                            <a class="b" href="https://the51uid.github.io/BNK_Capital/type_b/index_logout.html">
+                                Main (로그인전)
+                            </a>
+                            <a class="b" href="https://the51uid.github.io/BNK_Capital/type_b/index_login.html">
+                                Main (로그인후)
+                            </a>
+                            <a class="b" href="https://the51uid.github.io/BNK_Capital/type_b/sub1_sms_send.html">
+                                문자인증
+                            </a>
+                        </li>
+                    </ul>
+                </div> -->
+            </section>
+        </div>
+        <div class="footer">
+            <footer>
+                <img src="./assets/img/footer.svg">
+            </footer>
+        </div>
+    </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <title>Type A</title>
+    <link rel="stylesheet" href="/asseets/css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+</head>
+
+<style>
+    /*  */
+    @keyframes flicker-effect {
+        0% {opacity: 0;}
+        50% {opacity: .4;}
+        100% {opacity: 1;}
+    }
+    @keyframes float-effect {
+        0% {margin-top: 0px;}
+        100% {margin-top: 10px;}
+    }
+    .fck_img_01 {animation: flicker-effect .8s linear infinite alternate;}
+    .fck_img_02 {animation: flicker-effect 1.2s linear infinite alternate;}
+    .fck_img_03 {animation: flicker-effect 1s linear infinite alternate;}
+    .fck_img_04 {animation: flicker-effect 1.5s linear infinite alternate;}
+    .balloon_img_01 {animation: float-effect 1.5s linear infinite alternate;}
+
+    /* commmon */
+    .wrap {width: 750px; margin: 0 auto; overflow: hidden; text-align: center;}
+    .flex {display: flex; align-items: center; justify-content: space-between;}
+
+    /* main */
+    .bg_img {position: relative; max-width:100%; height: 1470px; background: url(../type_a/img/main/main_bg.svg) no-repeat center center / 100% 100%;}
+    .bg_img_wrap .fck_img_01 {position: absolute; top: -27px; left: -40px;}
+    .bg_img_wrap .fck_img_02 {position: absolute; top: 40px; right: 46px;}
+    .bg_img_wrap .fck_img_03 {position: absolute; top: 523px; left: 13px;}
+    .bg_img_wrap .fck_img_04 {position: absolute; top: 685px; right: 21px;}
+    .bg_img_wrap .balloon_img_01 {position: absolute; top: 738px; left: 76px;}
+
+    /* nav */
+    .nav_wrap {width: 100%; height: 100%; padding: 20px 12px; background-color: #c51e26;}
+    .nav {position: sticky; top: 0;}
+    .nav li a {display: block; font-size: 30px; color: rgba(255, 255, 255, .5); font-weight: bold; line-height: 40px;}
+    .nav li a:hover {color: #fff;}
+    .nav_wrap img {width: 107px; height: 100px;}
+
+</style>
+
+<body>
+     <div class="wrap">
+        <!-- container -->
+        <div class="container">
+            <!-- main -->
+            <section class="section">
+                <div class="bg_img">
+                    <div class="bg_img_wrap">
+                        <div class="fck_img_01">
+                            <img src="./img/main/Firecracker_01.svg" alt="">
+                        </div>
+                        <div class="fck_img_02">
+                            <img src="./img/main/Firecracker_02.svg" alt="">
+                        </div>
+                        <div class="fck_img_03">
+                            <img src="./img/main/Firecracker_03.svg" alt="">
+                        </div>
+                        <div class="fck_img_04">
+                            <img src="./img/main/Firecracker_04.svg" alt="">
+                        </div>
+                        <div class="balloon_img_01">
+                            <img src="./img/main/balloon_01.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="main_tit">
+                        <img src="" alt="">
+                    </div>
+                    <div class="sub_tit">
+                        <img src="" alt="">
+                    </div>
+                </div>     
+                <nav class="nav_wrap">
+                    <ul class="nav flex">
+                        <li><a href="#nav01">7종<br>쿠폰팩</a></li> 
+                        <li><a href="#nav02">구매<br>혜택</a></li>
+                        <li><a href="#nav03">한정<br>사은품</a></li>
+                        <li><a href="#nav04">아세페<br>알리기</a></li>
+                        <li><a href="#nav05">결제<br>혜택</a></li>
+                        <li><a href="#nav06">아세페<br>이벤트</a></li>
+                        <li><a href="#nav07">LIVE<br>방송</a></li> 
+                    </ul>
+                </nav>
+            </section> 
+            <!-- // main -->
+
+            <!-- 7종 쿠폰팩 -->
+            <section class="section">
+                <div id="nav01" class="cont01">
+
+                </div>
+            </section>
+            <!-- // 7종 쿠폰팩 -->
+
+            <!-- 구매혜택 -->
+            <section class="section">
+                <div id="nav02" class="cont02">
+
+                </div>
+            </section>
+            <!-- // 구매혜택 -->
+
+            <!-- 한정 사은품 -->
+            <section class="section">
+                <div id="nav03" class="cont03">
+
+                </div>
+            </section>
+            <!-- // 한정 사은품 -->
+
+            <!-- 아세페 알리기 -->
+            <section class="section">
+                <div id="nav04" class="cont04">
+
+                </div>
+            </section>
+            <!-- // 아세페 알리기 -->
+
+            <!-- 결제 혜택 -->
+            <section class="section">
+                <div id="nav05" class="cont05">
+
+                </div>
+            </section>
+            <!-- // 결제 혜택 -->
+
+            <!-- 아세페 이벤트 -->
+            <section class="section">
+                <div id="nav06" class="cont06">
+
+                </div>
+            </section>
+            <!-- // 아세페 이벤트 -->
+
+            <!-- Live 방송 -->
+            <section class="section">
+                <div id="nav07" class="cont07">
+
+                </div>
+            </section>
+            <!-- // Live 방송 -->
+        </div>     
+     </div>
+</body>
+<script src="./js/swiper-bundle.min.js"></script>
+<script src="./js/jquery-3.6.0.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</html>
