@@ -1,4 +1,5 @@
 $( function() {
+
     // design click open modal
     $(document).ready(function() {
         $('#BgImg').on('click', function() {
@@ -206,51 +207,4 @@ function rgb2hex(rgb) {
         return ("0" + parseInt(x).toString(16)).slice(-2);
     }
     return "#" + hex(rgb[1]) + hex(rgb[2]) + hex(rgb[3]);
-}
-
-$(function() {
-    // 이미지 저장 버튼 클릭 이벤트 연결
-    // HTML 구조상 .btn 클래스 내부의 버튼을 타겟팅합니다.
-    $('.btn button').on('click', function() {
-        saveDesign();
-    });
-});
-
-/**
- * 디자인 저장 함수
- */
-function saveDesign() {
-    // 1. 저장 전 스티커 선택 상태 해제 (테두리, 회전 핸들 숨기기)
-    if (typeof selReset === "function") {
-        selReset();
-    }
-
-    // 2. 캡처 대상 요소: .view_bg (배경과 스티커가 포함된 부모)
-    const $target = $(".view_bg");
-
-    if ($target.length === 0) {
-        alert("저장할 영역을 찾을 수 없습니다.");
-        return;
-    }
-
-    // 3. html2canvas 실행
-    html2canvas($target[0], {
-        useCORS: true,         // 외부 이미지(배경, 스티커) 허용
-        allowTaint: true,      // 크로스 도메인 설정 허용
-        backgroundColor: null, // 배경색을 설정하지 않으면 투명하게 처리됨
-        scale: 2               // 2배 고해상도로 저장
-    }).then(function(canvas) {
-        // 4. 파일명 설정 (디자인_현재시간.png)
-        const timestamp = new Date().getTime();
-        const fileName = 'my_design_' + timestamp + '.png';
-        
-        // 5. 다운로드 링크 생성 및 클릭
-        const link = document.createElement('a');
-        link.href = canvas.toDataURL("image/png");
-        link.download = fileName;
-        link.click();
-    }).catch(function(error) {
-        console.error("이미지 저장 중 오류:", error);
-        alert("이미지 저장에 실패했습니다. 다시 시도해 주세요.");
-    });
 }
